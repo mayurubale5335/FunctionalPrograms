@@ -14,7 +14,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.Exit");
+                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -49,6 +49,14 @@ namespace FunctionalPrograms
                         primeFactor.PrimeFactorization(P);
                         break;
                     case 6:
+                        Console.WriteLine("Enter the Dividend");
+                        int Dividend = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Divisor");
+                        int Divisor = Convert.ToInt32(Console.ReadLine());
+                        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                        quotientAndRemainder.QueAndRem(Divisor, Dividend);
+                        break;
+                    case 7:
                         flag = false;
                         break;
                         
