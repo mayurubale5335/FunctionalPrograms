@@ -14,7 +14,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Exit");
+                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -37,6 +37,12 @@ namespace FunctionalPrograms
                         powerof2.CalculatePower(N);
                         break;
                     case 4:
+                        Console.WriteLine("Enter the Nth number");
+                        int H = Convert.ToInt32(Console.ReadLine());
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
+                        harmonicNumber.CalculateHarmonicValue(H);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                         
