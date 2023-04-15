@@ -14,7 +14,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Exit");
+                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Swap\n8.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -57,6 +57,14 @@ namespace FunctionalPrograms
                         quotientAndRemainder.QueAndRem(Divisor, Dividend);
                         break;
                     case 7:
+                        Console.WriteLine("Enter the number1");
+                        int a = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the number2");
+                        int b = Convert.ToInt32(Console.ReadLine());
+                        Swap swap = new Swap();
+                        swap.SwapOfTwo(a, b);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                         
