@@ -14,7 +14,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Swap\n8.EvenOrOdd\n9.CheckAlphabet\n10.Exit");
+                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Swap\n8.EvenOrOdd\n9.CheckAlphabet\n10.GreatestAmongThree\n11.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -77,6 +77,16 @@ namespace FunctionalPrograms
                         checkAlphabet.Check(M);
                         break;
                     case 10:
+                        Console.WriteLine("Enter the Number1");
+                        int x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Number2");
+                        int y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Number3");
+                        int z = Convert.ToInt32(Console.ReadLine());
+                        GreatestAmongThree greatestAmongThree = new GreatestAmongThree();
+                        greatestAmongThree.FindGreatest(x, y, z);
+                        break;
+                    case 11:
                         flag = false;
                         break;
                         
