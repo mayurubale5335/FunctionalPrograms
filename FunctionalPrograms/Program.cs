@@ -14,7 +14,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Swap\n8.Exit");
+                Console.WriteLine("Select an option to execute the program 1.Flip Coin\n2.LeapYearCheck\n3.PowerOf2\n4.Harmonic Number\n5.PrimeFactor\n6.QuotientAndRemainder\n7.Swap\n8.EvenOrOdd\n9.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -65,6 +65,12 @@ namespace FunctionalPrograms
                         swap.SwapOfTwo(a, b);
                         break;
                     case 8:
+                        Console.WriteLine("Enter the Nth number");
+                        int value = Convert.ToInt32(Console.ReadLine());
+                        EvenOrAdd evenOrAdd = new EvenOrAdd();
+                        evenOrAdd.CheckEvenOrOdd(value);
+                        break;
+                    case 9:
                         flag = false;
                         break;
                         
